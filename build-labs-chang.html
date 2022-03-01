@@ -6,3 +6,15 @@
 
 ### vms based on the rhel7 rhcsa/rhce exam review book
 ## rhel8 not out yet
+
+# set storage for images
+# create lv
+# edit fstab & mount
+# restorecon -RFv
+
+# build virtual network
+sudo virt-manager &
+double-click QEMU
+Virtual Networks -> add
+outsider, 192.168.100/24, DHCP 192.168.100.128-254, should be virbr1
+
