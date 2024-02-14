@@ -8,25 +8,24 @@
   <meta name="description" content="Roger Michael Seip">
   <meta name="author" content="Roger Michael Seip">
 
-<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-
 <style>
-    body { background-color: White; color: Black; font-family: "Roboto", sans-serif; }
-    div { margin: 3px; padding: 3px; }
+    body { background-color: White; color: Black; font-family: sans-serif; }
+    div { margin: 3px; padding: 3px; float: none; }
     #bar-left { float: left; width: 20%; border-right: dotted 1px; }
     #main-right { float: right; width: 75%; }
-    div { float: none; }
     a { color: Gray; text-decoration: underline ; text-transform: none ; }
-    ul, li { list-style-type: none; margin: 0; padding: 0; list-style-position: outside; }
+    ul { list-style-type: none; padding: 0; }
+    q { font-style: italic ;}
     #summary p { font-style: italic; }
     #clearance { float: left; }
-    #clearance, #education, #certifications { list-style: none;}
     #experience { float: right; }
-    #experience li:first { border-top: solid 3px; padding: 0.5em; }
+    #experience li li { list-style-type: square; }
+    #experience h2::before { content: "📃  "; }
     #education h2::before { content: "🎓  "; }
     #certifications h2::before { content: "📜  "; }
-    #awards h2::before { content: "🏆  "; }
+    #awards h2::before { content: "🏁  "; }
     #clearance h2::before { content: "🪪  "; }
+    footer { float: left; width: 100%; }
 </style>
 
 </head>
@@ -34,25 +33,19 @@
 <body>
 
 <div id="contact">
-
-<h1>Roger Michael Seip</h1>
-
+    <h1>Roger Michael Seip</h1>
 </div>
 
 <div id="summary">
-
-<h1>Summary</h1>
-<p>Experienced DoD architect, engineer, and project manager. Most interested in improving IT outcomes by applying
-agile methods, DevSecOps principles, and avoiding premature optimization.</p>
-
+    <h2>Summary</h2>
+    <p>Experienced <abbr title="Department of Defense">DoD</abbr> architect, engineer, and project manager. Most interested in improving IT outcomes by applying agile methods, DevSecOps principles, and avoiding premature optimization.</p>
 </div>
 
 <div id="bar-left">
-
-    <div id="certifications">
- 
-        <h1>Certifications</h1>
+    <div id="certifications"> 
+        <h2>Certifications</h2>
         <ul>
+            <li><a href="https://www.isaca.org/credentialing/cgeit">ISACA <abbr title="Certified in the Governance of Enterprise IT">CGEIT</abbr></a></li>
             <li><a href="https://www.redhat.com/en/services/certification/rhcsa"><abbr title="Red Hat Certified System Administrator">RHCSA</abbr></a></li>
             <li><a href="https://www.redhat.com/en/services/certification/red-hat-certified-specialist-in-containers-and-kubernetes">Red Hat Certified Specialist in Containers &amp; Kubernetes</a></li>
             <li><a href="https://www.pmi.org/certifications/project-management-pmp"><abbr title="Project Management Professional">PMP</abbr></a></li>
@@ -61,192 +54,192 @@ agile methods, DevSecOps principles, and avoiding premature optimization.</p>
             <li><a href="https://www.comptia.org/certifications/cloud">CompTIA Cloud+</a></li>
             <li><a href="https://www.comptia.org/certifications/security">CompTIA Security+ ce</a></li>
             <li><a href="https://www.comptia.org/certifications/linux">CompTIA Linux+</a></li>
-            </ul>
+        </ul>        
+    </div>
         
-        </div>
-        
-        <div id="education">
-        
-        <h1>Education</h1>
+    <div id="education">        
+        <h2>Education</h2>
         <ul>
             <li><abbr title="Masters in Business Administration">MBA</abbr></a>, <a href="https://louisiana.edu/">University Of Louisiana at Lafeyette</a></li>
             <li><a href="https://www.ship.edu/">Shippensburg University</a></li>
             <li><abbr title="Bachelor of Science">BS</abbr>, <a href="https://www.psu.edu/">Penn State University</a></li>
         </ul>
+    </div>
         
-        </div>
-        
-        <div id="awards">
-        
-            <h1>Awards</h1>
+    <div id="awards">
+        <h2>Awards</h2>
         <ul>
             <li><a href="https://web.archive.org/web/20060427114038/http://www.redhat.com/sundown/techquestion0517.html">Winner, Red Hat Solaris to Linux Migration Tech Challenge on May 17, 2005</a></li>
         </ul>
+    </div>
         
-        </div>
-        
-        <div id="clearance">
-        
-        <h1>Clearance</h1>
+    <div id="clearance">
+        <h2>Clearance</h2>
         <ul>
             <li>TS/SCI</li>
         </ul>
-        
-        </div>
-        
+    </div>        
 </div>
 
 <div id="main-right">
 
     <div id="experience">
 
-        <h1>Experience</h1>
+        <h2>Experience</h2>
+
         <ul>
-        <li><h2>Senior Project Manager | <a href="https://www.dcca.com/">DCCA</a> | 2023 - present</h2></li>
-        <ul>
-        <li>
-        Growing and leading portfolio of enterprise-wide projects that promote innovations in both technology and in business processes.
-        </li>
-        <li>
-        Leading and managing a team that develops and operates contract management COTS and custom applications.
-        </li>
-        <li>
-        Mentoring personnel new to program.
-        <li>
-        Championing agile methods and DevSecOps principles including increasing leverage of git-based workflows via GitLab.
-        </li>
-        </ul>
-        <li>
-        <h2>Solutions Architect | <a href="https://www.redhat.com/en">Red Hat</a> | 2022 - 2023</h2>
-        </ul>
-        <ul>
-        <li>
-        Partnered with <a href="https://p1.dso.mil/">US Air Force Platform One</a> to achieve common goals for the <a href="https://p1.dso.mil/services/big-bang">Big Bang</a> on OpenShift Kubernetes containers solutions.
-        </li>
-        <li>
-        Secured Red Hat containers using GitLab DevSecOps capabilities and deployed to the <a href="https://p1.dso.mil/services/iron-bank">Iron Bank</a> container registry.
-        </li>
-        <li>
-        Supported Red Hat North America Public Sector consultative sales teams by creating, sharing, and delivering technical marketing and enablement materials such as white papers and the Big Bang on OpenShift roadshow co-presented with partner GitLab.
-        </li>
-        <li>
-        Guest speaker in <a href="https://www.brighttalk.com/webcast/19417/580747">Sonatype's May 2023 talk "Mastering SBOMs: How to Thrive After EO 14028"</a>.
-        </li>
-        </ul>
-        <li>
-        <h2>Enterprise Architect | <a href="https://www.dcca.com/">DCCA</a> | 2019 - 2022</h2>
-        </li>
-        <ul>
-        </li>
-        <li>
-        Defined technical architecture and standardized software development lifecycle and operations processes that promoted <abbr title="Defense Health Agency">DHA</abbr> healthcare claims processing program strategic objectives.
-        </li>
-        <li>
-        Planned, executed, and documented cloud transformation project from Oracle Solaris to Red Hat Linux servers and then from <abbr title="Defense Information Systems Agency">DISA</abbr> datacenter to <a href="https://aws.amazon.com/govcloud-us/">AWS GovCloud</a> Infrastructure as a Service (IaaS).
-        </li>
-        <li>
-        Communicated architectural vision and project progress to civilian and contractor program leadership as well as contractor staff.
-        </li>
-        <li>
-        Adjusted project scope and schedule to adapt to new requirements and vendor capabilities.
-        </li>
-        <li>
-        Refined <abbr title="Key Performance Indicators">key performance indicators</abbr> and metrics to measure and communicate success of technical and business decisions.
-        </li>
-        </ul>
-        <li>
-        <h2>Senior Principal Systems Administrator | <a href="https://www.northropgrumman.com/">Northrop Grumman</a> | 2018 - 2019</h2>
-        </li>
-        <ul>
-        <li>
-        Deployed Linux and third-party application upgrades into mission operations centers at multiple secure sites.
-        </li>
-        <li>
-        Created and briefed detailed technical implementation plans and schedules to senior program and military leadership.
-        </li>
-        <li>
-        Led and mentored project-oriented team of system administrators with varying levels of experience and skill.
-        </li>
-        </ul>
-        <li>
-        <h2>Project Delivery Manager | <a href="https://www.deloitte.com">Deloitte</a> | 2017 - 2018</h2>
-        </li>
-        <ul>
-        <li>Managed DISA <abbr title="Access and Security Configuration Control">ASCC</abbr> SaaS that automatically scanned and patched thousands of Windows, Solaris, HP/UX, and Linux servers across the DoD using BMC TrueSight and supporting products.
-        </li>
-        <li>
-        Planned and executed <abbr title="Continuity of Operations">COOP</abbr> exercises.
-        </li>
-        <li>
-        Configured architectural components such as Apache HTTP and Tomcat servers according to DISA STIG requirements.
-        </li>
-        <li>Managed <abbr title="Ports Protocols and Service Management">PPSM</abbr> and <abbr title="System Security Plan">SSP</abbr> accreditation documents.
-        </li>
-        <li>
-        Supported and led weekly user training and feedback sessions.
-        </li>
-        <li>
-        Analyzed performance data and prepared monthly program management review report.
-        </li>
-        </ul>
-        <li>
-        <h2>Senior Linux Systems Administrator | <a href="https://ddc-dine.com/nova/">NOVA Corporation</a> | 2007 - 2017</h2>
-        </li>
-        <ul>
-        <li>
-        Implemented and administered over 400 Red Hat and SUSE Linux servers at DISA Mechanicsburg.
-        </li>
-        <li>
-        In 2009, honored with "Outstanding Technical Program/Project of the Year" at the DISA Annual Computing Services Award ceremony for implementation of the <abbr title="Maritime Domain Awareness">MDA</abbr> mission partner project.
-        </li>
-        <li>
-        In 2009, received letters of appreciation for the DISA Mechanicsburg <abbr title="Command Cyber Readiness Inspection">CCRI</abbr> resulting in an "unprecedented exemplary rating" and for a successful <abbr title="DOD Information Assurance Certification and Accreditation">DIACAP</abbr> transition.
-        </li>
-        <li>
-        In 2008, received letter of appreciation for resolving problems with the <a href="https://cpa.transport.mil/dodconsent/display"> USTRANSCOM <abbr title="Customs Process Automation">CPA</abbr></a> mission partner.
-        </li>
-        </ul>
-        <li>
-        <h2>Adjunct Instructor | <a href="https://en.wikipedia.org/wiki/ITT_Technical_Institute">ITT Technical Institute</a> | 2002 - 2014</h2>
-        </li>
-        <ul>
-        <li>
-        Taught classes within the "Information Technology - Computer Network Systems" associate degree program.
-        </li>
-        <li>
-        Wrote new Linux curriculum including lesson plans, laboratory exercises, and exams in 2007.
-        </li>
-        </ul>
-        <li>
-        <h2>Technology Writer | <a href="https://torrescredit.com/">Torres Credit Services</a> | 2005 - 2006</h2>
-        </li>
-        <ul>
-        <li>
-        Researched and wrote operations manual documenting collections, customer service, accounting, and information technology management core business processes.
-        </li>
-        </ul>
-        <li>
-        <h2>Infrastructure Analyst | <a href="https://www.eds.com/"><abbr title="Electronic Data Systems">EDS</abbr></a> | 1995 - 2005</h2>
-        </li>
-        <ul>
-        <li>
-        Helped Camp Hill Information Processing Center (CHIPC) achieve ISO 9000 quality certification by writing tape library policies and procedures.
-        </li>
-        <li>
-        Completed <abbr title="Operations Professional Development">OPD</abbr> while assigned to the weekend change management team performing system maintenance and implementing enhancements.
-        </li>
-        <li>
-        Supported BMC software for the DISA <abbr title="System Support Office">SSO</abbr> in Mechanicsburg, Pennsylvania.
-        </li>
-        <li>
-        Deployed and managed Red Hat and SUSE Linux on DoD mainframes. Wrote training books and taught Linux to colleagues.
-        </li>
-        </ul>
+
+            <li><h3>Senior Project Manager | <a href="https://www.dcca.com/">DCCA</a> | 2023 - present</h3>
+            <ul>
+                <li>
+                Growing and leading portfolio of enterprise-wide projects that promote innovations in both technology and in business processes.
+                </li>
+                <li>
+                Leading and managing a team that develops and operates contract management <abbr title="Commercial off-the-shelf">COTS</abbr> and custom applications.
+                </li>
+                <li>
+                Mentoring personnel new to program.
+                <li>
+                Championing <a href="https://agilemanifesto.org/">agile</a> methods and DevSecOps principles including increasing leverage of git-based workflows via <a href="https://gitlab.com/">GitLab</a>.
+                </li>
+            </ul>
+            </li>
+
+            <li><h3>Solutions Architect | <a href="https://www.redhat.com/en">Red Hat</a> | 2022 - 2023</h3>
+            <ul>
+                <li>
+                Partnered with <a href="https://p1.dso.mil/">US Air Force Platform One</a> to achieve common goals for the <a href="https://p1.dso.mil/services/big-bang">Big Bang</a> on <a href="https://www.redhat.com/en/technologies/cloud-computing/openshift">OpenShift</a> <a href="https://kubernetes.io/">Kubernetes</a> containers solutions.
+                </li>
+                <li>
+                Secured Red Hat containers using GitLab DevSecOps capabilities and deployed to the <a href="https://p1.dso.mil/services/iron-bank">Iron Bank</a> container registry.
+                </li>
+                <li>
+                Supported Red Hat North America <a href="https://www.redhat.com/en/solutions/public-sector">Public Sector</a> consultative sales teams by creating, sharing, and delivering technical marketing and enablement materials such as white papers and the <a href="https://events.redhat.com/profile/form/index.cfm?PKformID=0x828363abcd&sc_cid=7013a000003DSmCAAW&elqTrackId=30bc9ffcbf4e4adf9927300d9f002211&elqTrack=true#travel">Big Bang on OpenShift roadshow</a>.
+                </li>
+                <li>
+                Guest speaker in <a href="https://www.brighttalk.com/webcast/19417/580747">Sonatype's May 2023 talk "Mastering SBOMs: How to Thrive After EO 14028"</a>.
+                </li>
+            </ul>
+            </li>
+
+            <li><h3>Enterprise Architect | <a href="https://www.dcca.com/">DCCA</a> | 2019 - 2022</h3>
+            <ul>
+                <li>
+                Defined technical architecture and standardized software development lifecycle and operations processes that promoted <abbr title="Defense Health Agency">DHA</abbr> healthcare claims processing program strategic objectives.
+                </li>
+                <li>
+                Planned, executed, and documented cloud transformation project from <a href="https://www.oracle.com/solaris/">Oracle Solaris</a> to <a href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux">Red Hat Linux</a> servers and then from <abbr title="Defense Information Systems Agency">DISA</abbr> datacenter to <a href="https://aws.amazon.com/govcloud-us/">AWS GovCloud</a> Infrastructure as a Service (IaaS).
+                </li>
+                <li>
+                Communicated architectural vision and project progress to civilian and contractor program leadership as well as contractor staff.
+                </li>
+                <li>
+                Adjusted project scope and schedule to adapt to new requirements and vendor capabilities.
+                </li>
+                <li>
+                Refined <abbr title="Key Performance Indicators">key performance indicators</abbr> and metrics to measure and communicate success of technical and business decisions.
+                </li>
+            </ul>
+            </li>
+
+            <li><h3>Senior Principal Systems Administrator | <a href="https://www.northropgrumman.com/">Northrop Grumman</a> | 2018 - 2019</h3>
+            <ul>
+                <li>
+                Deployed Linux and third-party application upgrades into mission operations centers at multiple secure sites.
+                </li>
+                <li>
+                Created and briefed detailed technical implementation plans and schedules to senior program and military leadership.
+                </li>
+                <li>
+                Led and mentored project-oriented team of system administrators with varying levels of experience and skill.
+                </li>
+            </ul>
+            </li>
+
+            <li><h3>Project Delivery Manager | <a href="https://www.deloitte.com">Deloitte</a> | 2017 - 2018</h3>
+            <ul>
+                <li>Managed DISA <abbr title="Access and Security Configuration Control">ASCC</abbr> <abbr title="Software As A Service">SaaS</abbr> that automatically scanned and patched thousands of <a href="https://www.microsoft.com/en-us/windows-server/">Windows</a>, Solaris, <a href="https://www.hpe.com/us/en/servers/hp-ux.html">HP/UX</a>, and Linux servers across the DoD using <a href="https://www.bmc.com/it-solutions/truesight.html">BMC TrueSight</a> and supporting products.
+                </li>
+                <li>
+                Planned and executed <abbr title="Continuity of Operations">COOP</abbr> exercises.
+                </li>
+                <li>
+                Configured architectural components such as Apache <a href="https://httpd.apache.org/">HTTP</a> and <a href="https://tomcat.apache.org/">Tomcat</a> servers according to DISA <a href="https://public.cyber.mil/stigs/"><abbr title="Security Technical Implementation Guides">STIG</abbr></a> requirements.
+                </li>
+                <li>Managed <a href="https://public.cyber.mil/connect/ppsm/"><abbr title="Ports Protocols and Service Management">PPSM</abbr></a> and <abbr title="System Security Plan">SSP</abbr> accreditation documents.
+                </li>
+                <li>
+                Supported and led weekly user training and feedback sessions.
+                </li>
+                <li>
+                Analyzed performance data and prepared monthly program management review report.
+                </li>
+            </ul>
+            </li>
+
+            <li><h3>Senior Linux Systems Administrator | <a href="https://ddc-dine.com/nova/">NOVA Corporation</a> | 2007 - 2017</h3>
+            <ul>
+                <li>
+                Implemented and administered over 400 Red Hat and <a href="https://www.suse.com/products/server/">SUSE Linux</a> servers within DISA datacenters.
+                </li>
+                <li>
+                In 2009, honored with "Outstanding Technical Program/Project of the Year" at the DISA Annual Computing Services Award ceremony for implementation of the <abbr title="Maritime Domain Awareness">MDA</abbr> mission partner project.
+                </li>
+                <li>
+                In 2009, received letters of appreciation for the DISA Mechanicsburg <abbr title="Command Cyber Readiness Inspection">CCRI</abbr> resulting in an <q>unprecedented exemplary rating</q> and for a successful <abbr title="DOD Information Assurance Certification and Accreditation">DIACAP</abbr> transition.
+                </li>
+                <li>
+                In 2008, received letter of appreciation for resolving problems with the <a href="https://cpa.transport.mil/dodconsent/display"> USTRANSCOM <abbr title="Customs Process Automation">CPA</abbr></a> mission partner.
+                </li>
+            </ul>
+            </li>
+
+            <li><h3>Adjunct Instructor | <a href="https://en.wikipedia.org/wiki/ITT_Technical_Institute">ITT Technical Institute</a> | 2002 - 2014</h3>
+                <ul>
+                <li>
+                Taught classes within the "Information Technology - Computer Network Systems" associate degree program.
+                </li>
+                <li>
+                Wrote new Linux curriculum including lesson plans, laboratory exercises, and exams in 2007.
+                </li>
+                </ul>
+            </li>
+
+
+            <li><h3>Technology Writer | <a href="https://torrescredit.com/">Torres Credit Services</a> | 2005 - 2006</h3>
+                <ul>
+                <li>
+                Researched and wrote operations manual documenting collections, customer service, accounting, and information technology management core business processes.
+                </li>
+                </ul>
+            </li>
+
+            <li><h3>Infrastructure Analyst | <a href="https://www.eds.com/"><abbr title="Electronic Data Systems">EDS</abbr></a> | 1995 - 2005</h3>
+                <ul>
+                <li>
+                Helped Camp Hill Information Processing Center (CHIPC) achieve <a href="https://www.iso.org/standard/62085.html">ISO 9000</a> certification by writing tape library policies and procedures.
+                </li>
+                <li>
+                Completed <abbr title="Operations Professional Development">OPD</abbr> while assigned to the weekend change management team performing system maintenance and implementing enhancements.
+                </li>
+                <li>
+                Supported BMC software for the DISA <abbr title="System Support Office">SSO</abbr>.
+                </li>
+                <li>
+                Deployed and managed Red Hat and SUSE Linux on DoD <a href="https://www.ibm.com/z/linux">mainframes</a>. Wrote training books and taught Linux to colleagues.
+                </li>
+                </ul>
+            </li>
+
         </ul>
         
-        </div>
+    </div>
         
 </div>
+
+<footer>
+    <p>&copy; Roger Seip | <a href="https://rogueroo.com/">home</a> | <a href="https://rogueroo.com/resume">resume</a> |   | <a href="https://rseip.com/">the other site</a></p>
+</footer>
 
 </body>
 </html>
