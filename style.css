@@ -1,0 +1,109 @@
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: white; /* Set body background color to white */
+    }
+
+    .content-container {
+      display: flex;
+      width: 100%;
+      flex-grow: 1;
+      position: relative;
+    }
+
+    /* Left side content */
+    .content {
+      flex: 1;
+      padding: 40px 20px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+      z-index: 1; /* Keep content in front of background */
+      color: #000;
+      opacity: 1;
+    }
+
+    .bg-tooltip {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: auto;
+      opacity: 0;
+      z-index: 2;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+      position: relative;
+      z-index: 2;
+    }
+
+    .icon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 30px;
+      max-width: 600px;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+      background: transparent; /* Ensure grid background is fully transparent */
+    }
+
+    .icon-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .icon-container a {
+      width: 64px;
+      height: 64px;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+      background-color: white;
+      padding: 6px;
+    }
+
+    .icon-container a:hover {
+      transform: scale(1.1);
+    }
+
+    .icon-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .label {
+      margin-top: 8px;
+      font-size: 0.85rem;
+      color: #333;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    /* Right side background */
+    .background {
+      flex: 1;
+      background: url('https://rogueroo.com/rogueroo.jpeg') no-repeat center center fixed;
+      background-size: 50%; /* Scale background to 50% */
+      background-position: right;
+      z-index: 1; /* Make sure the background stays behind the content */
+    }
+
+  </style>
